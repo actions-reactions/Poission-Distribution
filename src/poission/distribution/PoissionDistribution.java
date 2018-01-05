@@ -23,19 +23,7 @@ public class PoissionDistribution {
         final double e=2.72;
     
 
-        Px=(Math.pow(a,x)*Math.pow(e,-a))/PoissionDistribution.fact(x);
-       
-        
-        
+        Px=(Math.pow(a,x)*Math.pow(e,-a))/fact(x);
     }
-    
-        public int fact(int n){
-        int fact=1, i;
-        for (i=1;i<=n;i++){
-           fact=fact*i;
-        }
-        return fact;
-    }
-    
     
 }
