@@ -10,7 +10,7 @@ import java.math.*;
 
 /**
  *
- * @author Al-amin
+ * @author actions-reactions
  */
 public class Poission{
 
