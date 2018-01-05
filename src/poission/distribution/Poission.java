@@ -26,21 +26,18 @@ public class Poission{
         int x = sc.nextInt();
         System.out.print("Input alpha : ");
         int a = sc.nextInt();
-        
-        final double e=2.72;
-        
-
-        Px=(Math.pow(a,x)*Math.pow(e,-a))/fact(x);
+       
+        Px=(Math.pow(a,x)*Math.pow(Math.E,-a))/fact(x);
         
         System.out.println("Probability P(x): "+Px);
 
     }
         public static int fact(int n){
-        int i, res=1;
+        int i, fact=1;
         for(i=1;i<=n;i++){
-            res=res*i;
+            fact=fact*i;
         } 
-        return res;
+        return fact;
 
     }
 }
