@@ -5,6 +5,9 @@
  */
 package poission.distribution;
 
+import java.util.Scanner;
+import java.math.*;
+
 /**
  *
  * @author Al-amin
@@ -16,14 +19,16 @@ public class PoissionDistribution {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
         
-        double Px;
-        int x, a;
+        double Px = sc.nextDouble();
+        int x = sc.nextInt();
+        int a = sc.nextInt();
         
         final double e=2.72;
-    
+        
 
         Px=(Math.pow(a,x)*Math.pow(e,-a))/fact(x);
     }
-    
+      
 }
