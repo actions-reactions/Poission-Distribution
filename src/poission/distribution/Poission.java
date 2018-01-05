@@ -22,15 +22,14 @@ public class Poission{
         Scanner sc = new Scanner(System.in);
         
         double Px;
+        System.out.print("Input x : ");
         int x = sc.nextInt();
+        System.out.print("Input alpha : ");
         int a = sc.nextInt();
         
         final double e=2.72;
         
 
-<<<<<<< HEAD:src/poission/distribution/PoissionDistribution.java
-       // Px=(Math.pow(a,x)*Math.pow(e,-a))/fact(x);
-=======
         Px=(Math.pow(a,x)*Math.pow(e,-a))/fact(x);
         
         System.out.println("Probability P(x): "+Px);
@@ -42,7 +41,7 @@ public class Poission{
             res=res*i;
         } 
         return res;
->>>>>>> alien:src/poission/distribution/Poission.java
+
     }
 }
         
