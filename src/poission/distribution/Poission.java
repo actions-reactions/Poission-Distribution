@@ -12,7 +12,7 @@ import java.math.*;
  *
  * @author Al-amin
  */
-public class PoissionDistribution {
+public class Poission{
 
     /**
      * @param args the command line arguments
@@ -21,7 +21,7 @@ public class PoissionDistribution {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         
-        double Px = sc.nextDouble();
+        double Px;
         int x = sc.nextInt();
         int a = sc.nextInt();
         
@@ -29,6 +29,18 @@ public class PoissionDistribution {
         
 
         Px=(Math.pow(a,x)*Math.pow(e,-a))/fact(x);
+        
+        System.out.println("Probability P(x): "+Px);
+
     }
-      
+        public static int fact(int n){
+        int i, res=1;
+        for(i=1;i<=n;i++){
+            res=res*i;
+        } 
+        return res;
+    }
 }
+        
+    
+      
