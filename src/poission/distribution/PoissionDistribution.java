@@ -16,6 +16,14 @@ public class PoissionDistribution {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        double Px;
+        int x, a;
+        
+        final double e=2.72;
+    
+
+        Px=(Math.pow(a,x)*Math.pow(e,-a))/fact(x);
     }
     
 }
